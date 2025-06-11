@@ -8,5 +8,6 @@ for x in range(1,51):
    elif x%5==0:
       print(f"{x} Buzz")
    else:
+      
       print(x)
 
