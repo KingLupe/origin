@@ -11,5 +11,5 @@ while user_input !=0:
         print("Invalid input.Please enter a number ")
         
 total_sum=sum(numbers)   
-print(f"The sum of the numbers you entered is {total_sum}")     
+print(f"The sum of the numbers you entered is {total_sum}")    
 
