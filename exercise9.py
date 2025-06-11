@@ -11,4 +11,5 @@ for char in str:
        letters+=char   
 numbers_len=(len(numbers))
 letters_len=(len(letters))
+
 print(f"{str} has {numbers_len} digits and {letters_len} letters")
