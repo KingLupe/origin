@@ -2,7 +2,7 @@
 #(use if/else).
 numbers_list=[]
 print("Please enter 10 numbers")
-for i in range(10):
+for i in rangge(10):
   while True:
         try:
             user_input =input(f"Enter number {i+1}: ")
