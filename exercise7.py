@@ -8,8 +8,7 @@ for i in range(5):
             user_input=input(f"Enter number {i+1} ")
             number=int(user_input)
             numbers_list.append(number)
-    
-    
+            
             break
         except ValueError:
             print("Invalid value.Please enter an integer")   

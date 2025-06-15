@@ -6,8 +6,6 @@ except ValueError:
   print("Invalid value pleease enter a whole number") 
   exit()
 
-  
-
 for i in range(1,11):
  result=user_input*i
  print(f"{user_input} X {i} = {result}")
