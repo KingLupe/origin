@@ -1,15 +1,21 @@
 '''Ask the user to input a string. Count how many characters are letters and how many are digits using
 a for loop and if statements'''
 
-numbers=""
-letters=""
-str=input("Please input a string: ")
-for char in str:
-    if char.isdigit():
-       numbers+=char
-    elif char.isalpha():
-       letters+=char   
-numbers_len=(len(numbers))
-letters_len=(len(letters))
+input_string = input("Please enter a string (can include letters, numbers, and symbols): ")
 
-print(f"{str} has {numbers_len} digits and {letters_len} letters")
+digit_count = 0
+letter_count = 0
+
+for char in input_string:
+    if char.isdigit():
+        digit_count += 1
+    elif char.isalpha():
+        letter_count += 1
+    # You could add an 'else' here if you want to count other characters (symbols, spaces)
+    # else:
+    #     # handle other characters if needed
+    #     pass
+
+print(f"The string '{input_string}' contains:")
+print(f"- {letter_count} letters")
+print(f"- {digit_count} digits")
