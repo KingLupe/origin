@@ -1,20 +1,15 @@
-'''Repeatedly ask the user to enter a number using a while loop. Add the numbers together. Stop
-when the user enters 0. Then print the total sum'''
+#Sum until 0
 numbers=[]
+user_input=None
 print("Enter numbers to sum.Enter 0 to exit.")
-while True: # Use an infinite loop and break explicitly
+while user_input !=0:
     try:
-        user_input_str=input("Please enter any number ")
-        # Check if the user entered '0' to exit
-        if user_input_str== '0':
-            break #Exit the loop
-        number=int(user_input_str)
-        numbers.append(number)
+        user_input=int(input("Please enter any number "))
+        if user_input!=0:
+            numbers.append(user_input)
     except ValueError:
-        print("Invalid input.Please enter a number e. g 4,6,7 ")
-    except Exception as e:
-        print(f"An unexpected error occurred: {e}. Please try again.")
+        print("Invalid input.Please enter a number ")
         
 total_sum=sum(numbers)   
-print(f"The sum of the numbers you entered is {total_sum}")    
+print(f"The sum of the numbers you entered is {total_sum}")     
 

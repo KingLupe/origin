@@ -8,7 +8,6 @@ def reverse_number():
                 print("Please enter a non-negative integer")
             else:
                 break
-            
         except ValueError:
             print("Invalid input.Please enter an integer")   
     reversed_num_str=""  
